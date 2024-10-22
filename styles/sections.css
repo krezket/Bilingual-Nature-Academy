@@ -1,3 +1,8 @@
 section {
-    height: 100vh;
+    height: 70vh;
 }
+
+.section-1 {
+    background-image: url("../assets/backgrounds/nature2.jpg");
+    background-position: center;
+}    
