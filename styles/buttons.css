@@ -3,6 +3,7 @@ button {
 }
 
 .button-1 {
+    /* background-color: #c7b1a4;  */
     background-color: blue;
     color: white;
     border-radius: 10px;
