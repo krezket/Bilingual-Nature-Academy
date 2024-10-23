@@ -1,12 +1,54 @@
-button {
-    height: 30px;
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
-
 .button-1 {
     /* background-color: #c7b1a4;  */
+    --rotate: 10deg;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 50px;
     background-color: blue;
     color: white;
-    border-radius: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+.button-text {
+    position: relative;
+    color: white;
+    font-family: "Slabo 27px", serif;
+    font-weight: 500;
+}
+.fancy {
+    position: absolute;
+    inset: 0;
+}
+.button-1:hover .fancy {
+    &:before {
+        content: "";
+        background: conic-gradient(from var(--rotate),
+            transparent 0%, white 5%, transparent 10%);
+        position: absolute;
+        inset: 0;
+        animation: rotate 2s linear infinite;
+    }
+    &:after {
+        content: "";
+        background: blue;
+        position: absolute;
+        inset: 2px;
+        border-radius: 50px;
+    }
+}
+
+@keyframes rotate {
+    to {
+        --rotate: 360deg;
+    }
 }
 
 a {
@@ -14,6 +56,6 @@ a {
     text-decoration: none;
 }
 .form-button {
+    font-style: normal;
     color: white;
-    padding: 10px 10px 10px 10px;
 }

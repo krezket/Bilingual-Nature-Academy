@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Slabo+27px&display=swap');
+
 body {
     margin: 0;
     /* brown */
@@ -14,7 +16,9 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 3rem;
+    font-family: "Candal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
