@@ -10,40 +10,39 @@ section {
     justify-content: space-between;
     /* align-items: center; */
 }    
-.section-2 {
-    height: 100vh;
-    /* align-items: center; */
-}    
 
 .arrow-con {
     display: flex;
     justify-content: space-between;
 }
-
 .arrow-dark {
     width: 50px;
 }
-
 .arrow-dark:hover {
     width: 70px;
     color: white;
 }
 
 .carousel-dots {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
-
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .dot.active {
-  background-color: #717171;
+    background-color: #717171;
 }
+.section-2 {
+    height: 100vh;
+    /* align-items: center; */
+}    
+
