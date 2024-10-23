@@ -11,12 +11,18 @@ body {
     /* mid grey */
     /* background-color: #d5d5d7;  */
 }
-h1, h2 {
+
+h1 {
     margin: 0;
+    font-size: 3rem;
 }
+
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
+
 main {
     display: flex;
     flex-direction: column;
