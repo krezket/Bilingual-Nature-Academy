@@ -8,3 +8,12 @@ button {
     color: white;
     border-radius: 10px;
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.form-button {
+    color: white;
+    padding: 10px 10px 10px 10px;
+}

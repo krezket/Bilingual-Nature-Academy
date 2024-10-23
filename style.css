@@ -17,11 +17,6 @@ h1 {
     font-size: 3rem;
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-}
 
 main {
     display: flex;
