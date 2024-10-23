@@ -46,4 +46,13 @@
     /* background: linear-gradient(to bottom, white, transparent); */
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%);
 }
+@media (max-width: 606px) {
+    .title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .button-1 {
+        font-size: 1rem;
+    }
+}
 
