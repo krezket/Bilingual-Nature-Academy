@@ -37,10 +37,10 @@ section {
     display: inline-block;
     transition: background-color 0.3s;
 }
-
 .dot.active {
     background-color: #717171;
 }
+
 .section-2 {
     height: 100vh;
     /* align-items: center; */
