@@ -8,12 +8,10 @@
     --rotate: 10deg;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 50px;
-    background-color: blue;
-    color: white;
-    font-weight: 500;
-    font-size: 30px;
     border: 0;
+    border-radius: 50px;
+    background-color: #2b68d4; 
+    /* background-color: ##a08e9c; */
     position: relative;
     overflow: hidden;
 }
@@ -21,7 +19,8 @@
     position: relative;
     color: white;
     font-family: "Slabo 27px", serif;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 800;
 }
 .fancy {
     position: absolute;
@@ -38,7 +37,7 @@
     }
     &:after {
         content: "";
-        background: blue;
+        background: #2156de;
         position: absolute;
         inset: 2px;
         border-radius: 50px;
