@@ -11,17 +11,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
+.slide {
+    display: none;
+}
+
 .arrow-con {
     display: flex;
     justify-content: space-between;
 }
-.arrow-dark {
+.left, .right {
+    cursor: pointer;
     width: 50px;
 }
-.arrow-dark:hover {
-    width: 70px;
-    color: white;
+.fade {
+    animation: fade 1.5s;
 }
 
 .carousel-dots {
@@ -46,4 +51,3 @@
     height: 100vh;
     /* align-items: center; */
 }    
-
