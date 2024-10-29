@@ -1,16 +1,17 @@
-section {
-}
-
 .section-1 {
     height: 90vh;
-    background-image: url("../assets/backgrounds/nature2.jpg");
-    background-position: start;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
+    /* background-image: url("../assets/backgrounds/1.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
 }    
-
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .arrow-con {
     display: flex;
     justify-content: space-between;
