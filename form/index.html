@@ -17,7 +17,92 @@
             </header>
 
             <section class="section-1">
-                <div></div>
+                <form onSubmit={submitHandler}>
+
+                    <div className='form-div'>
+                        <label htmlFor="fn">First Name:</label>
+                        <input name='fn' value={fn} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="ln">Last Name:</label>
+                        <input name='ln' value={ln} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="description">Please type a detailed description of the work requested. The more info you share, the more accurate a quote we can provide.</label>
+                        <textarea name='desc' value={desc} id="description" cols="50" rows="5"></textarea>
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="email"> Enter your email:</label>
+                        <input name='email' value={email} type="email" id='email' />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="tel">Enter your phone number:</label>
+                        <input name='tel' value={tel} type="tel" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="address">Address of Work Requsted:</label>
+                        <input name='address' value={address} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="city">City:</label>
+                        <input name='city' value={city} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label>State</label>
+                        <label>
+                            <input onChange={handleCheckboxChange} checked={isChecked} type="checkbox" id='state' />
+                            WA
+                        </label>
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="zip">Zip Code</label>
+                        <input name='zip' value={zip} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="year">What decade was your home built in? If work is being done in an addition, what decade was the addition added?</label>
+                        <input name='year' value={year} type="text" />
+                    </div>
+
+
+                    <div className='form-div'>
+                        <label>When would you like this work done?</label>
+                        <input name='date1' value={date1} type="checkbox" />
+                        <input name='date2' value={date2} type="checkbox" />
+                        <input name='date3' value={date3} type="checkbox" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="desc">Please describe the photos you've uploaded and what you need changed / updated.</label>
+                        <input type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label htmlFor="add">Any additional information you'd like for me to know?</label>
+                        <input name='add' value={add} type="text" />
+                    </div>
+
+                    <div className='form-div'>
+                        <label>How did you find Whidbey Island Handyman?</label>
+                        <input name='opt1' value={opt1} type="checkbox" />
+                        <input name='opt2' value={opt2} type="checkbox" />
+                        <input name='opt3' value={opt3} type="checkbox" />
+                        <input name='opt4' value={opt4} type="checkbox" />
+                        <input name='opt5' value={opt5} type="checkbox" />
+                        <input name='opt6' value={opt6} type="checkbox" />
+                        <input name='opt7' value={opt7} type="checkbox" />
+                        <input name='opt8' value={opt8} type="checkbox" />
+                    </div>
+                    <button type='submit'><h3>Submit</h3></button>
+                </form>
             </section>
 
             <footer>

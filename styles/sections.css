@@ -2,7 +2,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     /* background-image: url("../assets/backgrounds/1.jpg"); */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
@@ -11,18 +11,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
 }
 .slide {
     display: none;
 }
-
+.slide img {
+    width: 600px;
+}
 .arrow-con {
     display: flex;
     justify-content: space-between;
 }
 .left, .right {
     cursor: pointer;
+    color: white;
     width: 50px;
 }
 .fade {
