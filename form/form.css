@@ -67,6 +67,9 @@ input:focus {
     .form, .radio {
         width: 60%;
     }
+    input {
+        width: 80%;
+    }
 }
 @media (max-width: 685px) {
     .form, .radio {
