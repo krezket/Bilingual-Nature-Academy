@@ -20,11 +20,11 @@
             <section class="margin-top" id="section1">
                 <form class="form">
                     <h2>Student Information</h1>
-                        <label class="required" for="sfn">First Name</label>
-                        <input id='sfn' type="text" name="studentName" /><br>
+                        <label class="sfn" id="sfnID" for="sfn">First Name</label>
+                        <input class="inputRequired" id='sfn' type="text" name="studentName" /><br>
 
-                        <label class="required" for="sln">Last Name</label>
-                        <input id='sln' type="text" name="studentLastName"/><br>
+                        <label class="sln" id="slnID" for="sln">Last Name</label>
+                        <input class="inputRequired" id='sln' type="text" name="studentLastName"/><br>
 
                         <label for="studentGender">Gender</label>
                         <input id='studentGender' type="text" name="studentGender"/><br>
@@ -182,7 +182,6 @@
             </footer>
         </main>
 
-        <script src="./script.js"></script>
         <script src="./submit.js"></script>
     </body>
 </html>
