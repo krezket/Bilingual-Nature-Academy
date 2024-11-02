@@ -17,20 +17,20 @@
                 <h1 class="title">Bilingual Nature Academy LLC</h1>
             </header>
 
-            <section class="margin-top">
+            <section class="margin-top" id="section1">
                 <form class="form">
                     <h2>Student Information</h1>
-                        <label for="fn">First Name</label>
-                        <input id='fn' type="text" name="studentName" /><br>
+                        <label class="required" for="sfn">First Name</label>
+                        <input id='sfn' type="text" name="studentName" /><br>
 
-                        <label for="ln">Last Name</label>
-                        <input id='ln' type="text" name="studentLastName"/><br>
+                        <label class="required" for="sln">Last Name</label>
+                        <input id='sln' type="text" name="studentLastName"/><br>
 
-                        <label for="gender">Gender</label>
-                        <input id='gender' type="text" name="studentGender"/><br>
+                        <label for="studentGender">Gender</label>
+                        <input id='studentGender' type="text" name="studentGender"/><br>
 
-                        <label for="dob">Date of birth</label>
-                        <input id='dob' type="text" name="studentDOB" placeholder="MM/DD/YYYY"/><br>
+                        <label for="sdob">Date of birth</label>
+                        <input id='sdob' type="text" name="studentDOB" placeholder="MM/DD/YYYY"/><br>
 
                         <label for="allergies">List of allergies</label>
                         <input id='allergies' type="text" name="allergies"/><br>
@@ -46,7 +46,7 @@
                 </form>
             </section>
 
-            <section class="margin-top">
+            <section class="margin-top" id="section2">
                 <form class="form">
                     <h2>Guardian 1</h1>
                         <label for="relation">Relationship to Student</label>
@@ -183,6 +183,7 @@
         </main>
 
         <script src="./script.js"></script>
+        <script src="./submit.js"></script>
     </body>
 </html>
 

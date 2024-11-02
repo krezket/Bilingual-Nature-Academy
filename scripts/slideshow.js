@@ -22,7 +22,7 @@ function showSlides(index) {
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
-}
+};
 
 function changeSlide(n) {
     slideIndex += n;
