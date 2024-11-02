@@ -1,14 +1,25 @@
+document.getElementById('sdob').addEventListener('input', function(event) {
+    let input = event.target.value;
+    
+    input = input.replace(/[^0-9\/]/g, '');
+
+    if (input.length > 2 && input[2] !== '/') {
+        input = input.slice(0, 2) + '/' + input.slice(2);
+    }
+    if (input.length > 5 && input[5] !== '/') {
+        input = input.slice(0, 5) + '/' + input.slice(5);
+    }
+
+    if (input.length > 10) {
+        input = input.slice(0, 10);
+    }
+
+    event.target.value = input;
+});
+
 function submitForm() {
     const section1 = document.getElementById('section1');
     const section2 = document.getElementById('section2');
-
-    const sfn = document.querySelector('.sfn');
-    const sfnMissing = document.querySelector('.sfnMissing');
-    const studentNameValue = document.getElementById('sfn').value;
-    
-    const sln = document.querySelector('.sln');
-    const slnMissing = document.querySelector('.sfnMissing');
-    const studentLastNameValue = document.getElementById('sln').value;
 
     const formValues = {};
     const requiredFormValues = {};
@@ -20,9 +31,24 @@ function submitForm() {
         e.preventDefault();
     });
 
+    let emptyFields = false;
+    
     requiredInputClass.forEach(input => {
-        requiredFormValues[input.name] = input.value;
+        const label = document.querySelector(`label[for="${input.id}"]`);
+        
+        if (input.value.trim() === '') {
+            label.classList.add('missing')
+            emptyFields = true;
+            section1.scrollIntoView({ behavior: 'smooth' });
+        }
+        else { 
+            label.classList.remove('missing')
+        };
     });
+    if (emptyFields) {
+        alert("Please fill in all required fields.");
+    }
+        
     console.log("Required Form Values:", requiredFormValues);
 
     inputs.forEach(input => {

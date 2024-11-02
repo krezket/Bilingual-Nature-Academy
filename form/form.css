@@ -19,6 +19,9 @@ section {
 .margin-top {
     margin: 20px 0 0 0;
 }
+label {
+    margin-bottom: 10px;
+}
 input {
     width: 100%;
     max-width: 400px;
@@ -40,7 +43,7 @@ input:focus {
     border-color: #007bff;
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
-.sfnMissing, .slnMissing {
+.missing {
     color: red;
 }
 .form {
