@@ -11,50 +11,29 @@
     align-items: center;
     justify-content: space-between;
     z-index: 3; 
-    position: relative;
 }
-
-/* Background container setup */
 .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    z-index: 2; 
-    overflow: hidden;
-}
-.blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* backdrop-filter: blur(15px);  */
-    /* -webkit-backdrop-filter: blur(15px); */
     z-index: 1; 
-    overflow: hidden;
 }
-
-
 .back {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
 }
-
 .back img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.3; 
+}
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 2; 
 }
 
 .slide {
@@ -63,7 +42,7 @@
 }
 
 .slide img {
-    width: 600px;
+    width: 400px;
 }
 
 .fade {
@@ -76,24 +55,26 @@
     }
 }
 
-.arrow-con {
-    display: flex;
-    justify-content: space-between;
-}
-
 .left, .right {
+    z-index: 3;
     cursor: pointer;
     color: white;
     width: 50px;
 }
 
 .carousel-dots {
+    display: flex;
+    position: absolute;
+    justify-content: center;
     text-align: center;
+    width: 100%;
     margin-top: 10px;
+    z-index: 3;
 }
 
 .dot {
     cursor: pointer;
+    z-index: 3; 
     height: 15px;
     width: 15px;
     margin: 0 5px;
