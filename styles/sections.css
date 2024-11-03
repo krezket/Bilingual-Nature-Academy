@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .carousel {
@@ -33,8 +34,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px);  */
+    /* -webkit-backdrop-filter: blur(15px); */
     z-index: 1; 
     overflow: hidden;
 }
@@ -49,18 +50,16 @@
     z-index: -1; 
 }
 
-/* Image styling within `.back` */
 .back img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.3; /* Adjust opacity to enhance blur visibility */
+    opacity: 0.3; 
 }
 
-/* Slide styling */
 .slide {
     display: none;
-    z-index: 2; /* Ensure slides are above the background */
+    z-index: 2; 
 }
 
 .slide img {
@@ -71,7 +70,6 @@
     animation: fade 1.5s;
 }
 
-/* Responsive adjustments */
 @media (max-width: 606px) {
     .slide img {
         width: 250px;
