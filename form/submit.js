@@ -19,7 +19,6 @@ document.getElementById('sdob').addEventListener('input', function(event) {
 
 function submitForm() {
     const section1 = document.getElementById('section1');
-    const section2 = document.getElementById('section2');
 
     const formValues = {};
     const requiredFormValues = {};

@@ -17,7 +17,10 @@
     display: none;
 }
 .slide img {
-    width: 400px;
+    width: 600px;
+}
+.fade {
+    animation: fade 1.5s;
 }
 @media (max-width: 606px) {
     .slide img {
@@ -32,9 +35,6 @@
     cursor: pointer;
     color: white;
     width: 50px;
-}
-.fade {
-    animation: fade 1.5s;
 }
 
 .carousel-dots {
