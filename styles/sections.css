@@ -1,36 +1,88 @@
 .section-1 {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-image: url("../assets/backgrounds/1.jpg"); */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-}    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .carousel {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: relative; */
+    z-index: 3; 
+    position: relative;
 }
+
+/* Background container setup */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2; 
+    overflow: hidden;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1; 
+    overflow: hidden;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+/* Image styling within `.back` */
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; /* Adjust opacity to enhance blur visibility */
+}
+
+/* Slide styling */
 .slide {
     display: none;
+    z-index: 2; /* Ensure slides are above the background */
 }
+
 .slide img {
     width: 600px;
 }
+
 .fade {
     animation: fade 1.5s;
 }
+
+/* Responsive adjustments */
 @media (max-width: 606px) {
     .slide img {
         width: 250px;
     }
 }
+
 .arrow-con {
     display: flex;
     justify-content: space-between;
 }
+
 .left, .right {
     cursor: pointer;
     color: white;
@@ -41,6 +93,7 @@
     text-align: center;
     margin-top: 10px;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -51,11 +104,12 @@
     display: inline-block;
     transition: background-color 0.3s;
 }
+
 .dot.active {
     background-color: #717171;
 }
 
 .section-2 {
     height: 100vh;
-    /* align-items: center; */
-}    
+}
+
