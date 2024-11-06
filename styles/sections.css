@@ -12,6 +12,11 @@
     margin-top: 100px;
     z-index: 3; 
 }
+@media (max-height: 650px) {
+    .carousel {
+        margin-top: 0px;
+    }
+}
 .background {
     display: flex;
     justify-content: center;
@@ -52,6 +57,11 @@
 @media (max-width: 606px) {
     .slide img {
         width: 250px;
+    }
+}
+@media (max-height: 650px) {
+    .slide img {
+        width: 350px;
     }
 }
 

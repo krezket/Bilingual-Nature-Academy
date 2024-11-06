@@ -1,10 +1,10 @@
-const URL_PREFIX = "https://wih-backend-78d28634cdc0.herokuapp.com"
-
+// const URL_PREFIX = "https://wih-backend-78d28634cdc0.herokuapp.com"
+// const URL_PREFIX = "https://wih-backend-78d28634cdc0.herokuapp.com"
 
 const API = {
-    sendQuote: async (quote) => {
+    sendForm: async (form) => {
         try {
-            const response = await fetch(`${URL_PREFIX}/submit-quote`, {
+            const response = await fetch(`${URL_PREFIX}/submit-form`, {
                 method: 'POST',
                 body: JSON.stringify(quote),
                 headers: {
@@ -21,5 +21,5 @@ const API = {
         }
     },
 }
-export default API;
 
+export default API;
