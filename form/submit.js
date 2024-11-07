@@ -17,7 +17,7 @@ document.getElementById('sdob').addEventListener('input', function(event) {
     event.target.value = input;
 });
 
-function submitForm() {
+async function submitForm() {
     const section1 = document.getElementById('section1');
 
     const formValues = {};
@@ -59,4 +59,21 @@ function submitForm() {
         }
     });
     console.log("All Form Values:", formValues);
+
+    try {
+        const response = await fetch('http://localhost:3001/submit-form', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formValues)
+            });
+        if (response.ok) {
+            alert('Form submitted and email sent successfully!');
+        }
+        else {
+            alert('An error occurred while sending the email.');
+        } 
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while sending the email');
+    }
 };
