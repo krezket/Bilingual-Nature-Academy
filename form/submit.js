@@ -61,7 +61,7 @@ async function submitForm() {
     console.log("All Form Values:", formValues);
 
     try {
-        const response = await fetch('http://localhost:3001/submit-form', {
+        const response = await fetch('https://bna-backend-d057bbf0cede.herokuapp.com/submit-form', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formValues)
