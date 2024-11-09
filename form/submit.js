@@ -67,7 +67,7 @@ async function submitForm() {
             body: JSON.stringify(formValues)
             });
         if (response.ok) {
-            alert('Form submitted and email sent successfully!');
+            window.location.href = '../success/index.html';
         }
         else {
             alert('An error occurred while sending the email.');
