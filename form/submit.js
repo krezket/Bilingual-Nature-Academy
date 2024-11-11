@@ -3,11 +3,16 @@ document.getElementById('sdob').addEventListener('input', function(event) {
     
     input = input.replace(/[^0-9\/]/g, '');
 
-    if (input.length > 2 && input[2] !== '/') {
+    if (input.length === 2 && input[2] !== '/') {
         input = input.slice(0, 2) + '/' + input.slice(2);
+    } else if (input.length > 3 && input[2] === '/') {
+        input = input.slice(0, 2);
     }
-    if (input.length > 5 && input[5] !== '/') {
+
+    if (input.length === 5 && input[5] !== '/') {
         input = input.slice(0, 5) + '/' + input.slice(5);
+    } else if (input.length > 6 && input[5] === '/') {
+        input = input.slice(0, 5);
     }
 
     if (input.length > 10) {
@@ -52,7 +57,7 @@ async function submitForm() {
 
     inputs.forEach(input => {
         if (input.type === "radio" && input.checked) {
-            formValues[input.name] = input.value;  // Only adds the selected radio button
+            formValues[input.name] = input.value;  
         } 
         else if (input.name && input.type !== "radio") {
             formValues[input.name] = input.value;
