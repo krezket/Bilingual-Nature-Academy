@@ -1,27 +1,3 @@
-document.getElementById('sdob').addEventListener('input', function(event) {
-    let input = event.target.value;
-    
-    input = input.replace(/[^0-9\/]/g, '');
-
-    if (input.length === 2 && input[2] !== '/') {
-        input = input.slice(0, 2) + '/' + input.slice(2);
-    } else if (input.length === 3 && input[2] === '/') {
-        input = input.slice(0, 2);
-    }
-
-    if (input.length === 5 && input[5] !== '/') {
-        input = input.slice(0, 5) + '/' + input.slice(5);
-    } else if (input.length === 6 && input[5] === '/') {
-        input = input.slice(0, 5);
-    }
-
-
-    if (input.length > 10) {
-        input = input.slice(0, 10);
-    }
-
-    event.target.value = input;
-});
 
 async function submitForm() {
     const section1 = document.getElementById('section1');
@@ -32,9 +8,9 @@ async function submitForm() {
     const requiredInputClass = document.querySelectorAll('.inputRequired');
     const inputs = document.querySelectorAll('input');
 
-    window.addEventListener('beforeunload', function (e) {
-        e.preventDefault();
-    });
+    // window.addEventListener('beforeunload', function (e) {
+    //     e.preventDefault();
+    // });
 
     let emptyFields = false;
     
@@ -73,7 +49,7 @@ async function submitForm() {
             body: JSON.stringify(formValues)
             });
         if (response.ok) {
-            window.location.href = '../success/index.html';
+            window.location.href = '../success/';
         }
         else {
             alert('An error occurred while sending the email.');
