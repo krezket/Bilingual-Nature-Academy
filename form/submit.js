@@ -5,15 +5,16 @@ document.getElementById('sdob').addEventListener('input', function(event) {
 
     if (input.length === 2 && input[2] !== '/') {
         input = input.slice(0, 2) + '/' + input.slice(2);
-    } else if (input.length > 3 && input[2] === '/') {
+    } else if (input.length === 3 && input[2] === '/') {
         input = input.slice(0, 2);
     }
 
     if (input.length === 5 && input[5] !== '/') {
         input = input.slice(0, 5) + '/' + input.slice(5);
-    } else if (input.length > 6 && input[5] === '/') {
+    } else if (input.length === 6 && input[5] === '/') {
         input = input.slice(0, 5);
     }
+
 
     if (input.length > 10) {
         input = input.slice(0, 10);
