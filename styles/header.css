@@ -11,7 +11,12 @@
     /* padding: 0 10px 0 10px; */
 }
 .margin-top {
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
+}
+#section-1 {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
 }
 .header {
     /* brown */
