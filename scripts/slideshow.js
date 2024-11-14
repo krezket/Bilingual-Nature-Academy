@@ -13,15 +13,25 @@ function showSlides(index) {
 
     if (index >= slides.length && back.length) slideIndex = 0;
     if (index < 0) slideIndex = slides.length -1 && back.length -1;
-    slides.forEach((slide) => (slide.style.display = "none"));
-    back.forEach((back) => (back.style.display = "none"));
+    slides.forEach((slide) => {
+        slide.classList.remove("fade");
+        slide.style.display = "none"
+    });
+    back.forEach((back) => {
+        back.classList.remove("fade");
+        back.style.display = "none"
+    });
 
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
     slides[slideIndex].style.display = "block";
+    slides[slideIndex].classList.add("fade");
+    
     back[slideIndex].style.display = "block";
+    back[slideIndex].classList.add("fade");
+    
     dots[slideIndex].className += " active";
 };
 
@@ -31,16 +41,11 @@ const playIcon = document.getElementById('paused');
 let pauseState = window.localStorage.getItem("paused") || 'false';
 
 function setState(state) {
-    console.log(state)
     pauseState = state;
     window.localStorage.setItem("paused", state);
     if (pauseState === 'true') {
-        // pauseIcon.id = 'paused';
-        // playIcon.id = 'notpaused';
         clearInterval(slideInterval);
     } else {
-        // playIcon.id = 'notpaused';
-        // pauseIcon.id = 'paused';
         startSlideshow();
     }
 };
