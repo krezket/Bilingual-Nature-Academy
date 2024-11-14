@@ -1,4 +1,3 @@
-
 async function submitForm() {
     const section1 = document.getElementById('section1');
 
@@ -28,7 +27,8 @@ async function submitForm() {
     });
     if (emptyFields) {
         alert("Please fill in all required fields.");
-    }
+        return;
+    };
         
     console.log("Required Form Values:", requiredFormValues);
 

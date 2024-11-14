@@ -27,13 +27,13 @@
 
                 <div class="background">
                     <div class="back fade">
-                        <img src="assets/backgrounds/1.jpg"/>
+                        <img src="src/assets/backgrounds/1.jpg"/>
                     </div>
                     <div class="back fade">
-                        <img src="assets/backgrounds/2.jpg"/>
+                        <img src="src/assets/backgrounds/2.jpg"/>
                     </div>
                     <div class="back fade">
-                        <img src="assets/backgrounds/3.jpg"/>
+                        <img src="src/assets/backgrounds/3.jpg"/>
                     </div>
                 </div>
 
@@ -41,25 +41,26 @@
                 </div>
 
                 <div class="carousel">
-                    <img class="left" src="assets/icons/dark-filled-left.svg" alt="left"/>
+                    <img class="left" src="src/assets/icons/dark-filled-left.svg" alt="left"/>
 
                     <div class="slide fade">
-                        <img src="assets/backgrounds/1.jpg"/>
+                        <img src="src/assets/backgrounds/1.jpg"/>
                     </div>
                     <div class="slide fade">
-                        <img src="assets/backgrounds/2.jpg"/>
+                        <img src="src/assets/backgrounds/2.jpg"/>
                     </div>
                     <div class="slide fade">
-                        <img src="assets/backgrounds/3.jpg"/>
+                        <img src="src/assets/backgrounds/3.jpg"/>
                     </div>
 
-                    <img class="right" src="assets/icons/dark-filled-right.svg" alt="right"/>
+                    <img class="right" src="src/assets/icons/dark-filled-right.svg" alt="right"/>
                 </div>
                 <div class="carousel-dots">
                     <span class="dot" onclick="currentSlide(0)"></span>
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
-                    <button class="pause">pause slideshow</button>
+                    <object type="image/svg+xml" class="pause" id="notpaused" src="src/assets/icons/pause.svg"/>
+                    <img class="pause" id="paused" src="src/assets/icons/play.svg"/>
                 </div>
 
             </section>

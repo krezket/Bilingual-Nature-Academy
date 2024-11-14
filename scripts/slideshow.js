@@ -26,6 +26,8 @@ function showSlides(index) {
 };
 
 const pause = document.querySelector(".pause");
+const pauseIcon = document.getElementById('notpaused');
+const playIcon = document.getElementById('paused');
 let pauseState = window.localStorage.getItem("paused") || 'false';
 
 function setState(state) {
@@ -33,11 +35,15 @@ function setState(state) {
     pauseState = state;
     window.localStorage.setItem("paused", state);
     if (pauseState === 'true') {
+        // pauseIcon.id = 'paused';
+        // playIcon.id = 'notpaused';
         clearInterval(slideInterval);
     } else {
+        // playIcon.id = 'notpaused';
+        // pauseIcon.id = 'paused';
         startSlideshow();
     }
-}
+};
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
@@ -75,5 +81,3 @@ if (pauseState === 'true') {
 else {
     startSlideshow();
 };
-
-
