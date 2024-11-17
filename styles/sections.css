@@ -1,7 +1,7 @@
 .section-1 {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     overflow: hidden;
     margin-top: 150px;
 }
@@ -15,13 +15,15 @@
 .carousel {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 80px;
-    z-index: 3; 
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
 }
 @media (max-height: 850px) {
     .carousel {
-        margin-top: 0px;
+        margin-top: 60px;
     }
 }
 .pause {
@@ -36,11 +38,11 @@
     z-index: 2; 
 }
 
-.background {
-    display: flex;
-    justify-content: center;
-    z-index: 1; 
-}
+/* .background { */
+/*     display: flex; */
+/*     justify-content: center; */
+/*     z-index: 1;  */
+/* } */
 .back {
     position: absolute;
     width: 100%;
@@ -56,25 +58,16 @@
     z-index: 2; 
 }
 
-.slide img {
-    transition: opacity 1s ease;
-    width: 500px;
+.carousel-img {
+    max-width: 90%;
+    max-height: 80%;
+    width: 700px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
 }
 .fade {
     display: block;
     opacity: 1;
-}
-
-
-@media (max-width: 606px) {
-    .slide img {
-        width: 250px;
-    }
-}
-@media (max-height: 650px) {
-    .slide img {
-        width: 350px;
-    }
 }
 
 .left, .right {
@@ -93,6 +86,11 @@
     margin-top: 10px;
     z-index: 3;
 }
+@media (max-width: 606px) {
+    .blur, .carousel, .carousel-dots {
+        display: none;
+    }
+}
 
 .dot {
     cursor: pointer;
@@ -109,8 +107,20 @@
 .dot.active {
     background-color: #717171;
 }
-
-.section-2 {
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.section-2, .section-3, .section-4, .section-5  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10%;
+    width: 55%;
     height: 100vh;
+    /* mid grey */
+    background-color: #d5d5d7; 
 }
 

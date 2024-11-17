@@ -77,7 +77,7 @@ function startSlideshow() {
     clearInterval(slideInterval);
     slideInterval = setInterval(() => {
         changeSlide(1);
-    }, 3000);
+    }, 5000);
 };
 
 if (pauseState === 'true') {
