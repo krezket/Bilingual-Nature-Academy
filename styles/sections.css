@@ -1,9 +1,9 @@
 .section-1 {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     overflow: hidden;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 @media (min-width: 1650px) {
     .section-1 {
@@ -29,52 +29,28 @@
 .pause {
     width: 80px;
 }
-.blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    z-index: 2; 
-}
 
-/* .background { */
-/*     display: flex; */
-/*     justify-content: center; */
-/*     z-index: 1;  */
-/* } */
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.back img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .slide {
     display: none;
-    z-index: 2; 
-}
-
-.carousel-img {
-    max-width: 90%;
-    max-height: 80%;
-    width: 700px;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
 }
 .fade {
-    display: block;
+    justify-content: center;
+    flex-direction: row;
     opacity: 1;
 }
 
+.carousel-img {
+    max-width: 100%;
+    max-height: 80%;
+    width: 900px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
 .left, .right {
-    z-index: 3;
     cursor: pointer;
-    color: white;
-    width: 50px;
+    max-width: 50px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-dots {
@@ -85,11 +61,6 @@
     width: 100%;
     margin-top: 10px;
     z-index: 3;
-}
-@media (max-width: 606px) {
-    .blur, .carousel, .carousel-dots {
-        display: none;
-    }
 }
 
 .dot {

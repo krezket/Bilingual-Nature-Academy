@@ -8,29 +8,20 @@ showSlides(slideIndex);
 
 function showSlides(index) {
     let slides = document.querySelectorAll(".slide");
-    let back = document.querySelectorAll(".back");
     let dots = document.getElementsByClassName("dot");
 
-    if (index >= slides.length && back.length) slideIndex = 0;
-    if (index < 0) slideIndex = slides.length -1 && back.length -1;
+    if (index >= slides.length) slideIndex = 0;
+    if (index < 0) slideIndex = slides.length -1;
     slides.forEach((slide) => {
         slide.classList.remove("fade");
         slide.style.display = "none"
     });
-    back.forEach((back) => {
-        back.classList.remove("fade");
-        back.style.display = "none"
-    });
-
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex].style.display = "flex";
     slides[slideIndex].classList.add("fade");
-    
-    back[slideIndex].style.display = "block";
-    back[slideIndex].classList.add("fade");
     
     dots[slideIndex].className += " active";
 };
@@ -61,12 +52,10 @@ function changeSlide(n) {
 
 leftArrow.addEventListener("click", () => {
     changeSlide(-1);
-    console.log("left clicked")
 });
 
 rightArrow.addEventListener("click", () => {
     changeSlide(1);
-    console.log("right clicked")
 });
 
 pause.addEventListener("click", () => {
