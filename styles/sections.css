@@ -33,6 +33,7 @@
 .slide {
     display: none;
 }
+
 .fade {
     justify-content: center;
     flex-direction: row;
