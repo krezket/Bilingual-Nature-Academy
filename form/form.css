@@ -36,21 +36,25 @@ input:focus {
 .missing {
     color: red;
 }
-.form {
+.form-con {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 20%;
-    padding: 1.5%;
-    padding-bottom: 0;
+    width: 90%;
     /* mid grey */
     background-color: #d5d5d7; 
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    padding-bottom: 0;
+    width: 90%;
 }
 
 .radio {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 50%;
     padding: 1.5%;
     gap: 1rem;
     background-color: #d5d5d7; 
@@ -59,8 +63,33 @@ input:focus {
         margin: 0;
     }
 }
-@media (max-width: 2222px) {
-    .form, .radio {
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      height: 150px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      resize: vertical;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    textarea:focus {
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      outline: none;
+    }
+
+    textarea::placeholder {
+      color: #888;
+      font-style: italic;
+    }
+@media (max-width: 2222 {
+    .radio {
         width: 30%;
     }
     input {
@@ -68,7 +97,10 @@ input:focus {
     }
 }
 @media (max-width: 985px) {
-    .form, .radio {
+    .form-con {
+        width: 90%;
+    }
+    .radio {
         width: 60%;
     }
     input {
@@ -76,8 +108,8 @@ input:focus {
     }
 }
 @media (max-width: 685px) {
-    .form, .radio {
-        width: 80%;
+    .form-con, .form, .radio {
+        width: 90%;
     }
 }
 .form-div {
