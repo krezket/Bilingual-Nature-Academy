@@ -1,26 +1,18 @@
-let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.carousel .slide');
-const background = document.querySelector('.carousel-background');
+const buttons = document.querySelectorAll("[data-carousel-button]")
 
-function showSlide(index) {
-    // Hide all slides
-    slides.forEach(slide => (slide.style.display = 'none'));
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
 
-    // Show the current slide
-    slides[index].style.display = 'block';
+    const activeSlide = slides.querySelector("[data-active]")
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
 
-    // Update the background to match the current slide
-    const currentImage = slides[index].querySelector('.carousel-img').src;
-    background.style.backgroundImage = `url(${currentImage})`;
-
-    currentSlideIndex = index;
-}
-
-// Initial setup
-showSlide(0);
-
-// Auto-slide (optional)
-setInterval(() => {
-    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    showSlide(currentSlideIndex);
-}, 5000);
+    slides.children[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+  })
+})
