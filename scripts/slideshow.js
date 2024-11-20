@@ -1,77 +1,26 @@
-const leftArrow = document.querySelector(".left");
-const rightArrow = document.querySelector(".right");
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.carousel .slide');
+const background = document.querySelector('.carousel-background');
 
-let slideIndex = 0;
-let slideInterval;
+function showSlide(index) {
+    // Hide all slides
+    slides.forEach(slide => (slide.style.display = 'none'));
 
-showSlides(slideIndex);
+    // Show the current slide
+    slides[index].style.display = 'block';
 
-function showSlides(index) {
-    let slides = document.querySelectorAll(".slide");
-    let dots = document.getElementsByClassName("dot");
+    // Update the background to match the current slide
+    const currentImage = slides[index].querySelector('.carousel-img').src;
+    background.style.backgroundImage = `url(${currentImage})`;
 
-    if (index >= slides.length) slideIndex = 0;
-    if (index < 0) slideIndex = slides.length -1;
-    slides.forEach((slide) => {
-        slide.classList.remove("fade");
-        slide.style.display = "none"
-    });
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex].style.display = "flex";
-    slides[slideIndex].classList.add("fade");
-    
-    dots[slideIndex].className += " active";
-};
-
-const pause = document.querySelector(".pause");
-const pauseIcon = document.getElementById('notpaused');
-const playIcon = document.getElementById('paused');
-let pauseState = window.localStorage.getItem("paused") || 'false';
-
-function setState(state) {
-    pauseState = state;
-    window.localStorage.setItem("paused", state);
-    if (pauseState === 'true') {
-        clearInterval(slideInterval);
-    } else {
-        startSlideshow();
-    }
-};
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-};
-
-function changeSlide(n) {
-    slideIndex += n;
-    showSlides(slideIndex);
-};
-
-leftArrow.addEventListener("click", () => {
-    changeSlide(-1);
-});
-
-rightArrow.addEventListener("click", () => {
-    changeSlide(1);
-});
-
-pause.addEventListener("click", () => {
-    setState(pauseState === 'true' ? 'false' : 'true');
-});
-
-function startSlideshow() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(() => {
-        changeSlide(1);
-    }, 5000);
-};
-
-if (pauseState === 'true') {
-    clearInterval(slideInterval);
+    currentSlideIndex = index;
 }
-else {
-    startSlideshow();
-};
+
+// Initial setup
+showSlide(0);
+
+// Auto-slide (optional)
+setInterval(() => {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+}, 5000);
