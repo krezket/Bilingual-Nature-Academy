@@ -76,15 +76,42 @@ body {
 .section-gray {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* padding: 5% 15% 5% 15%; */
+    padding: 5% 5% 5% 5%;
     margin: 5% 15% 5% 15%;
+    border-radius: 10px;
     /* mid grey */
     background-color: #d5d5d7; 
 }
+.section-gray h1 {
+    font-size: 3rem;
+} 
+.section-gray h3 {
+    font-weight: 1rem;
+    font-size: 2rem;
+} 
 #left {
+    padding: 5% 10% 5% 5%;
     align-items: flex-start;
 }
 #right {
+    padding: 5% 5% 5% 10%;
     align-items: flex-end;
+}
+@media (max-width: 1200px) {
+    .section-gray h1 {
+        font-size: 2rem;
+    } 
+    #right {
+        padding: 5% 10% 5% 5%;
+        align-items: flex-start;
+    }
+    .section-gray h3 {
+        font-weight: 1rem;
+        font-size: 1rem;
+    } 
+}
+@media (max-width: 500px) {
+    .section-gray h1 {
+        font-size: 1.5rem;
+    } 
 }
