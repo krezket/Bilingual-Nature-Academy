@@ -6,6 +6,7 @@ async function submitForm() {
 
     const requiredInputClass = document.querySelectorAll('.inputRequired');
     const inputs = document.querySelectorAll('input');
+    const textareas = document.querySelectorAll('textarea');
 
     // window.addEventListener('beforeunload', function (e) {
     //     e.preventDefault();
@@ -38,6 +39,11 @@ async function submitForm() {
         } 
         else if (input.name && input.type !== "radio") {
             formValues[input.name] = input.value;
+        }
+    });
+    textareas.forEach(textarea => {
+        if (textarea.name) {
+            formValues[textarea.name] = textarea.value;
         }
     });
     console.log("All Form Values:", formValues);
