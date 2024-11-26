@@ -77,7 +77,6 @@ body {
     display: flex;
     padding: 5% 5% 5% 5%;
     margin: 5% 5% 5% 5%;
-    flex-direction: row;
     border-radius: 10px;
     /* mid grey */
     background-color: #d5d5d7; 
@@ -106,16 +105,27 @@ body {
     padding: 5% 5% 5% 10%;
 }
 @media (max-width: 1200px) {
+    .section-gray {
+        /* justify-content: center; */
+        flex-direction: column;
+        height: 600px;
+        z-index: -3;
+    } 
     .section-gray h1 {
         font-size: 2rem;
+        z-index: -1;
     } 
-    #right {
-        padding: 5% 10% 5% 5%;
-        align-items: flex-start;
+    #right, #left {
+        align-items: center;
     }
     .section-gray h3 {
         font-weight: 1rem;
         font-size: 1rem;
+        z-index: -1;
+    } 
+    .img-body {
+        position: absolute;
+        z-index: -2;
     } 
 }
 @media (max-width: 500px) {
