@@ -25,11 +25,17 @@
     /* light green */
     /* background-color: #b1c1b4;  */
 
-    /* dark green */
+    /* normal green */
     background-color: #8ea092; 
 
     /* darker grey */
     /* background-color: #c4c3c8;  */
+
+    /* forest green */
+    /* background-color: #228B22;  */
+
+    /* dark forest green */
+    /* background-color: #002D04;  */
 
     display: flex;
     position: fixed;
