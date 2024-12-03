@@ -88,6 +88,7 @@ body {
     font-size: 3rem;
 } 
 .section-gray h3 {
+    font-family: "Slabo 27px", serif;
     font-weight: 1rem;
     font-size: 1.5rem; 
 } 
@@ -127,7 +128,7 @@ body {
         padding: 5% 5% 5% 5%;
     }
     .section-gray h3 {
-    font-family: "Slabo 27px", serif;
+        font-family: "Slabo 27px", serif;
         font-weight: 1rem;
         font-size: 1rem;
         z-index: -1;
