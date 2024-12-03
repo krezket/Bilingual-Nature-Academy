@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.carousel-section {
+    margin-bottom: 50px;
+}   
+
 .carousel {
     height: 100vh;
     position: relative;
@@ -92,6 +96,11 @@ body {
     flex-direction: column;
     margin: 5% 5% 5% 5%;
 }
+.img-con {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
 .img-body {
     max-width: 30%;
     height: auto;
@@ -122,8 +131,16 @@ body {
         font-size: 1rem;
         z-index: -1;
     } 
+    .img-con {
+        display: block;
+    }
     .img-body {
-        display: none;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     } 
 }
 @media (max-width: 500px) {
