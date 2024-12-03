@@ -85,6 +85,7 @@
 }
 .title {
     font-size: 3rem;
+    margin-left: 10px;
 }
 .linear {
     /* background: linear-gradient(to bottom, white, transparent); */
