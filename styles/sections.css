@@ -107,28 +107,35 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%; 
-    height: 100%;
+    height: 50vh;
     max-width: 100%;
 }
 .blur-con {
+    position: absolute;
     padding: 5% 5% 5% 5%;
+    height: 50vh;
     width: 100%;
 }
 .img-back {
+    position: absolute;
     background-image: url("../src/assets/backgrounds/1.jpg");
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 90%;
     z-index: -3;
 }
 .img-blur {
+    position: absolute;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    width: 100%; 
-    height: 100%;
+    width: 90%;
+    height: 50%;
     padding: 5% 5% 5% 5%;
     z-index: -2;
 }
 .img-body {
-    position: absolute;
     max-width: 30%;
     max-height: 5000px;
 }
