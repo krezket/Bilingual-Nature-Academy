@@ -96,7 +96,7 @@ body {
   background-size: cover;
   background-position: center;
   filter: blur(20px); /* Controls how strong the blur is */
-  z-index: -1; /* Sends the blurred image behind the content */
+  /* z-index: -1;  */
 }
 
 .image-section img {
