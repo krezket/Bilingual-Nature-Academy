@@ -12,10 +12,12 @@
     margin-left: 5px;
     border: 0;
     border-radius: 50px;
-    /* background-color: #2b68d4;  */
     /* background-color: ##a08e9c; */
     position: relative;
     overflow: hidden;
+}
+#back-to-home {
+    background-color: #2b68d4; 
 }
 .button-text {
     position: relative;

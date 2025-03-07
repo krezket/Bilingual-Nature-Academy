@@ -1,0 +1,13 @@
+.info-section {
+    display: flex;
+    justify-content: center;
+    margin: 170px 10px 50px 10px;
+}   
+
+.info {
+    border-radius: 10px;
+    align-items: center;
+    background-color: #d5d5d7;
+    padding: 2%;
+}
+
