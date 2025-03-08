@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Kabouter';
+    src: url('/src/assets/fonts/Kabouter.otf') format('opentype');
+}
 .form-header {
     /* dark green */
     background-color: #8ea092; 
@@ -87,8 +91,9 @@
     }
 }
 .title {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-left: 10px;
+    font-family: "Kabouter", sans-serif;
 }
 .linear {
     /* background: linear-gradient(to bottom, white, transparent); */
