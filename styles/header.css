@@ -103,6 +103,9 @@
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%);
 }
 @media (max-width: 1010px) {
+    .header, .header-active {
+        height: 150px;
+    }
     .title {
         text-align: center;
         font-size: 3rem;

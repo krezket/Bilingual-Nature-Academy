@@ -85,14 +85,14 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    margin: 0 10px 0 10px;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
 }
 #img1 {
     background-image: url("../src/assets/backgrounds/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    margin-top: 100px;
 }
 #img2 {
     background-image: url("../src/assets/backgrounds/2.jpg");
@@ -146,16 +146,16 @@ body {
 .section-gray h3 {
     font-family: "Slabo 27px", serif;
     font-weight: 1rem;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 } 
 .section-con {
     display: flex;
     flex-direction: column;
     margin: 5% 5% 5% 5%;
 }
-    .mobile {
-        display: none;
-    }
+.mobile {
+    display: none;
+}
 
 @media (max-width: 1200px) {
     .section-gray {
@@ -168,8 +168,6 @@ body {
     } 
     .section-gray h3 {
         font-family: "Slabo 27px", serif;
-        font-weight: 1rem;
-        font-size: 2rem;
         z-index: -1;
     } 
     .img-con {
