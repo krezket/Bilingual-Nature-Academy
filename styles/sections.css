@@ -10,7 +10,7 @@ body {
 .carousel-section {
     /* display: flex; */
     /* justify-content: center; */
-    margin: 170px 10px 50px 10px;
+    /* margin: 170px 10px 50px 10px; */
 }   
 
 .carousel {
@@ -92,6 +92,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin-top: 100px;
 }
 #img2 {
     background-image: url("../src/assets/backgrounds/2.jpg");
@@ -135,6 +136,7 @@ body {
     padding: 5% 5% 5% 5%;
     margin: 5% 5% 5% 5%;
     border-radius: 10px;
+    z-index: 2;
     /* mid grey */
     background-color: #d5d5d7; 
 }
@@ -151,12 +153,14 @@ body {
     flex-direction: column;
     margin: 5% 5% 5% 5%;
 }
+    .mobile {
+        display: none;
+    }
 
 @media (max-width: 1200px) {
     .section-gray {
         /* justify-content: center; */
         flex-direction: column;
-        z-index: -3;
     } 
     .section-gray h1 {
         font-size: 2rem;
@@ -165,7 +169,7 @@ body {
     .section-gray h3 {
         font-family: "Slabo 27px", serif;
         font-weight: 1rem;
-        font-size: 1rem;
+        font-size: 2rem;
         z-index: -1;
     } 
     .img-con {
@@ -187,6 +191,15 @@ body {
     .img {
         width: 80%; 
         height: auto;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-tracks: center;
+    }
+    .computer {
+        display: none;
     }
 }
 @media (max-width: 500px) {
