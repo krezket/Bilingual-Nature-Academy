@@ -127,6 +127,12 @@
     }
 }
 @media (max-width: 460px) {
+    .header, .header-active {
+        height: 120px;
+    }
+    .filler-header {
+        height: 130px;
+    }
     .title {
         text-align: center;
         font-size: 2rem;
