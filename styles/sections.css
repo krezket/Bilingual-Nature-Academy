@@ -19,7 +19,11 @@ body {
     border-radius: 10px;
     /* width: 50%; */
 }
-
+.carousel h1 {
+    position: relative;
+    font-size: 4rem;
+    z-index: 4;
+}
 .carousel > ul {
     margin: 0;
     padding: 0;
@@ -96,6 +100,24 @@ body {
     margin: 2%;
     z-index: 2;
 }
+
+#intro {
+    margin: 0;
+    padding: 0px 20px 0px 20px;
+    background-image: url("../src/assets/backgrounds/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#intro-2 {
+    margin: 0;
+    padding: 0px 20px 0px 20px;
+}
+#gray-intro {
+    margin-top: 90px;
+    padding: 0px 20px 0px 20px;
+}
+
 #img1 {
     background-image: url("../src/assets/backgrounds/1.jpg");
     background-size: cover;
