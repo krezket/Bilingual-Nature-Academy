@@ -2,6 +2,14 @@ main {
     height: 100vh;
 }
 
+.info-title {
+    padding-bottom: 60px;
+}
+
+.brown {
+    color: #964B00;
+}
+
 .info-section {
     display: flex;
     justify-content: center;
