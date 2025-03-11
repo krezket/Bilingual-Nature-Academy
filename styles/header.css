@@ -6,7 +6,7 @@
     /* dark green */
     background-color: #8ea092; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     color: white;
@@ -44,7 +44,7 @@
     display: flex;
     position: fixed;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     color: white;
@@ -63,7 +63,7 @@
     display: flex;
     position: fixed;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     color: white;
@@ -77,9 +77,18 @@
     width: 100%;
     height: 170px;
 }
+.title {
+    font-size: 5rem;
+    margin-left: 40px;
+    font-family: "Kabouter", sans-serif;
+}
+.button-con {
+    margin-right: 40px;
+}
 @media (max-width: 1650px) {
     .header, .form-header {
         width: 100%;
+        justify-content: space-around;
         flex-direction: column;
         height: 190px;
         z-index: 5;
@@ -93,11 +102,12 @@
         z-index: 5;
         /* padding: 50px 40px 50px 40px; */
     }
-}
-.title {
-    font-size: 5rem;
-    margin-left: 10px;
-    font-family: "Kabouter", sans-serif;
+    .title {
+        margin-left: 0px;
+    }
+    .button-con {
+        margin-right: 0px;
+    }
 }
 .linear {
     /* background: linear-gradient(to bottom, white, transparent); */
