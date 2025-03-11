@@ -88,6 +88,13 @@ body {
     padding: 5% 5% 5% 5%;
     margin: 5% 5% 5% 5%;
 }
+.img {
+    position: relative;
+    width: 30%; 
+    height: auto;
+    margin: 2%;
+    z-index: 2;
+}
 #img1 {
     background-image: url("../src/assets/backgrounds/1.jpg");
     background-size: cover;
@@ -122,13 +129,6 @@ body {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
-.img {
-    position: relative;
-    width: 30%; 
-    height: auto;
-    margin: 2%;
-    z-index: 2;
-}
 
 /* SECTIONS */
 .section-gray {
@@ -140,19 +140,20 @@ body {
     /* mid grey */
     background-color: #d5d5d7; 
 }
-.section-gray h1 {
-    font-size: 3rem;
-} 
-.section-gray h3 {
-    font-family: "Slabo 27px", serif;
-    font-weight: 1rem;
-    font-size: 1.5rem;
-} 
 .section-con {
     display: flex;
     flex-direction: column;
     margin: 5% 5% 5% 5%;
+    z-index: 2;
 }
+.section-con h1 {
+    font-size: 5rem;
+} 
+.section-con h3 {
+    font-family: "Slabo 27px", serif;
+    font-weight: 1rem;
+    font-size: 1.5rem;
+} 
 .mobile {
     display: none;
 }
