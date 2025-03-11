@@ -171,11 +171,13 @@ body {
 }
 .section-con h1 {
     font-size: 5rem;
+    text-align: left;
 } 
 .section-con h3 {
     font-family: "Slabo 27px", serif;
     font-weight: 1rem;
     font-size: 1.5rem;
+    line-height: 35px;
 } 
 .mobile {
     display: none;
@@ -187,10 +189,10 @@ body {
         flex-direction: column;
     } 
     .section-gray h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         z-index: -1;
     } 
-    .section-gray h3 {
+    .section-gray h2, h3, h4 {
         font-family: "Slabo 27px", serif;
         z-index: -1;
     } 
