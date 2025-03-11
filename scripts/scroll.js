@@ -6,11 +6,12 @@ window.addEventListener('scroll', function() {
 
     // set scroll position
     const scrollPosition = window.scrollY;
+    console.log(scrollPosition)
 
-    if (scrollPosition > 50) {
+    if (scrollPosition >= 201) {
         staticHeader.className = 'header-active';
     }
-    else if (scrollPosition == 0) {
+    else if (scrollPosition <= 200) {
         staticHeader.className = 'header';
     };
 });
