@@ -179,6 +179,11 @@ body {
     font-size: 1.5rem;
     line-height: 35px;
 } 
+.section-con-mobile h2 {
+    font-family: "Slabo 27px", serif;
+    font-size: 1.2rem;
+    line-height: 35px;
+} 
 .mobile {
     display: none;
 }
@@ -225,9 +230,12 @@ body {
     .computer {
         display: none;
     }
+    .section-con h3 {
+        font-size: 1.2rem;
+    } 
 }
 @media (max-width: 500px) {
     .section-gray h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     } 
 }
