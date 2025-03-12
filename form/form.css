@@ -76,7 +76,7 @@ input:focus {
     border-radius: 10px;
     flex-direction: column;
     justify-content: space-around;
-    width: 700px;
+    width: 90%;
     padding: 1.5%;
     gap: 1rem;
     background-color: #d5d5d7; 
@@ -130,7 +130,7 @@ input:focus {
         width: 90%;
     }
     .radio {
-        width: 60%;
+        width: 90%;
     }
     input {
         width: 80%;
