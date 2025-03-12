@@ -150,6 +150,7 @@ input:focus {
     }
 }
 .form-submit {
+    margin: 20px 0 20px 0;
     border-radius: 20px;
     width: 20%;
 }
