@@ -230,7 +230,7 @@ body {
     } 
 }
 @media (max-width: 1010px) {
-    .img {
+    .img, .img.visible {
         width: 80%; 
         height: auto;
     }
