@@ -238,6 +238,9 @@ body {
     } 
 }
 @media (max-width: 1010px) {
+    #gray-intro {
+        margin: 10px 0 10px 0;
+    }
     .img, .img.visible {
         width: 80%; 
         height: auto;
@@ -251,8 +254,19 @@ body {
     .computer {
         display: none;
     }
-    .section-con h3 {
+    .section-con-mobile {
+        padding: 1%;
+    }
+    .section-con-mobile h2 {
+        line-height: 30px;
+    } 
+    .section-con-mobile h3 {
         font-size: 1.2rem;
+        line-height: 30px;
+    } 
+    .section-con-mobile h4 {
+        font-size: 1.1rem;
+        line-height: 30px;
     } 
 }
 @media (max-width: 500px) {
