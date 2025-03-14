@@ -179,7 +179,10 @@ body {
 .section-con {
     display: flex;
     flex-direction: column;
+    background-color: #d5d5d7; 
+    border-radius: 10px;
     margin: 5% 5% 5% 5%;
+    padding: 1.5%;
     z-index: 2;
 }
 .section-con h1 {
@@ -188,9 +191,14 @@ body {
 } 
 .section-con h3 {
     font-family: "Slabo 27px", serif;
-    font-weight: 1rem;
     font-size: 1.5rem;
     line-height: 35px;
+} 
+.section-con h4 {
+    font-family: "Slabo 27px", serif;
+    font-size: 1.4rem;
+    line-height: 35px;
+    margin: 0;
 } 
 .section-con-mobile h2 {
     font-family: "Slabo 27px", serif;
