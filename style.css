@@ -23,6 +23,13 @@ h1 {
     font-weight: 600;
     font-style: normal;
 }
+h2, h3, h4 {
+    font-family: "Slabo 27px", serif;
+}
+li {
+    font-family: "Slabo 27px", serif;
+    font-size: 1.4rem;
+}
 
 main {
     display: flex;

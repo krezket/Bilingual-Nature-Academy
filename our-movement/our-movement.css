@@ -1,0 +1,17 @@
+.our-movement {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
+    border-radius: 10px;
+    z-index: 2;
+    /* mid grey */
+    background-color: #d5d5d7; 
+    h1, h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
