@@ -1,5 +1,6 @@
 // Select all elements you want to observe
 const fadeElements = document.querySelectorAll('.img');
+const paragraphElements = document.querySelector('.section-con');
 
 // Create an intersection observer
 const observer = new IntersectionObserver((entries, observer) => {
@@ -15,5 +16,8 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // Start observing each element
 fadeElements.forEach(element => {
+  observer.observe(element);
+});
+paragraphElements.forEach(element => {
   observer.observe(element);
 });
