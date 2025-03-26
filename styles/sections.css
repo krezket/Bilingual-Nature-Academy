@@ -95,8 +95,9 @@ body {
 }
 .img {
     position: relative;
-    width: 30%; 
-    height: auto;
+    object-fit: contain;
+    object-position: top;
+    width: 35%;
     margin: 2%;
     z-index: 2;
     /* animation */
@@ -105,11 +106,6 @@ body {
     transition: opacity 1s ease, transform 1s ease;
 }
 .img.visible {
-    position: relative;
-    width: 30%; 
-    height: auto;
-    margin: 2%;
-    z-index: 2;
     /* animation */
     opacity: 1;
     transform: translateY(0);
@@ -181,12 +177,12 @@ body {
     flex-direction: column;
     background-color: #d5d5d7; 
     border-radius: 10px;
-    margin: 5% 5% 5% 5%;
+    margin: 2% 5% 5% 5%;
     padding: 1.5%;
     z-index: 2;
 }
 .section-con h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: left;
 } 
 .section-con h3 {
