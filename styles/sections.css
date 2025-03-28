@@ -177,10 +177,8 @@ body {
     /* margin: 5% 5% 5% 5%; */
     z-index: 2;
     /* mid grey */
-    /* -webkit-backdrop-filter: blur(15px); */
-    /* backdrop-filter: blur(15px); */
 
-    div {
+    info-con-1 {
         position: absolute;
         padding: 5% 5% 5% 5%;
     }
@@ -201,6 +199,11 @@ body {
         color: white;
     }
 }
+.info-con-2 {
+    padding: 5% 5% 5% 5%;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+} 
 .section-gray {
     display: flex;
     padding: 5% 5% 5% 5%;
