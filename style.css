@@ -18,8 +18,11 @@ body {
 }
 
 video {
-    width: 90%;
+    position: absolute;
+    width: 95%;
     height: auto;
+    border-radius: 10px;
+    z-index: -3;
 }
 
 h1 {
