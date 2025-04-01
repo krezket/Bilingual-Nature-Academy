@@ -132,6 +132,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin-top: 100px;
 }
 #img2 {
     background-image: url("../src/assets/backgrounds/2.jpg");
@@ -167,40 +168,54 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
 } 
+video {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -3;
+    object-fit: cover;
+}
 .section-video {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    /* margin: 5% 5% 5% 5%; */
+    max-width: 1400px;
+    margin: 0 auto;
     z-index: 2;
-    /* mid grey */
 
-    info-con-1 {
-        position: absolute;
-        padding: 5% 5% 5% 5%;
+    .info-con-1 {
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem 0;
     }
 
     h1 {
-        font-size: 6.5rem;
+        font-size: clamp(3rem, 6vw, 6.5rem);
         text-align: left;
-        /* color: white; */
+        margin: 1rem 0;
     }
     h3 {
-        font-size: 1.5rem;
-        line-height: 35px;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        line-height: 1.6;
         color: white;
+        margin: 0.5rem 0;
     }
     h2 {
-        font-size: 2rem;
-        line-height: 35px;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        line-height: 1.6;
         color: white;
+        margin: 0.5rem 0;
     }
 }
 .info-con-2 {
-    padding: 5% 5% 5% 5%;
+    padding: 2% 2% 2% 2%;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 } 
@@ -247,13 +262,7 @@ body {
     display: none;
 }
 
-@media (max-width: 1785px) {
-    .section-video {
-        h1 {
-            font-size: 3rem;
-        }
-    }
-}
+
 @media (max-width: 1200px) {
     .section-gray {
         /* justify-content: center; */
