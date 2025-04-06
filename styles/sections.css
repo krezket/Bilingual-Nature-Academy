@@ -90,6 +90,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
+    min-height: 100vh;
     padding: 5% 5% 5% 5%;
     margin: 5% 5% 5% 5%;
 }
@@ -100,9 +101,6 @@ body {
     width: 35%;
     margin: 2%;
     z-index: 2;
-    /* animation */
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
 }
 #intro {
     margin: 0;
@@ -252,6 +250,9 @@ video {
     font-size: 1.2rem;
     line-height: 35px;
 } 
+.mobile {
+    display: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -280,12 +281,16 @@ video {
     } 
 }
 @media (max-width: 1010px) {
+    .computer {
+        display: none;
+    }
     #gray-intro {
         margin: 10px 0 10px 0;
     }
-    .img, .img.visible {
+    .img {
         width: 80%; 
         height: auto;
+        object-position: center;
     }
     .mobile{
         display: flex;

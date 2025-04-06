@@ -16,6 +16,9 @@ body {
     /* mid grey */
     /* background-color: #d5d5d7;  */
 }
+body > div {
+    overflow-x: hidden;
+}
 
 h1 {
     margin: 0;
