@@ -101,14 +101,8 @@ body {
     margin: 2%;
     z-index: 2;
     /* animation */
-    opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease, transform 1s ease;
-}
-.img.visible {
-    /* animation */
-    opacity: 1;
-    transform: translateY(0);
 }
 #intro {
     margin: 0;
@@ -258,9 +252,6 @@ video {
     font-size: 1.2rem;
     line-height: 35px;
 } 
-.mobile {
-    display: none;
-}
 
 
 @media (max-width: 1200px) {
@@ -278,9 +269,6 @@ video {
     } 
     .img-con {
         display: block;
-    }
-    .img-bkgrd, .img-blur {
-        display: none;
     }
     .img-body {
         display: block;
@@ -304,12 +292,6 @@ video {
         flex-direction: column;
         justify-content: center;
         align-tracks: center;
-    }
-    .computer {
-        display: none;
-    }
-    .section-con-mobile {
-        padding: 1%;
     }
     .section-con-mobile h2 {
         line-height: 30px;
