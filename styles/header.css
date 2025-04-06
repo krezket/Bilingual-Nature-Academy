@@ -128,7 +128,7 @@
 }
 @media (max-width: 460px) {
     .header, .header-active {
-        height: 120px;
+        height: 180px;
     }
     .filler-header {
         height: 130px;
