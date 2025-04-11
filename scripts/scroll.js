@@ -6,7 +6,6 @@ window.addEventListener('scroll', function() {
 
     // set scroll position
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition)
 
     if (scrollPosition >= 201) {
         staticHeader.className = 'header-active';
