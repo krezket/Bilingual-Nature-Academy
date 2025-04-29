@@ -186,9 +186,8 @@ video {
         padding: 2rem;
         margin: 1rem 0;
     }
-
     h1 {
-        font-size: 4.5rem;
+        font-size: 4.9rem;
         text-align: left;
         margin: 1rem 0;
     }
@@ -202,7 +201,7 @@ video {
         font-size: clamp(1.5rem, 3vw, 2rem);
         line-height: 1.6;
         color: white;
-        margin: 0.5rem 0;
+        margin: 2rem 0;
     }
 }
 .info-con-2 {
