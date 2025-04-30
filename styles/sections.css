@@ -251,6 +251,11 @@ video {
 .mobile {
     display: none;
 }
+.mobile-info-con {
+    h1 {
+        text-align: center;
+    }
+}
 
 
 @media (max-width: 1200px) {
