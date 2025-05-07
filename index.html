@@ -309,6 +309,24 @@
                 </div>
             </section>
 
+            <div id="map">
+                <gmp-map
+                    center="43.4142989,-124.2301242"
+                    zoom="4"
+                    map-id="aec49ac9198a5a9b25d86295"
+                    style="height: 400px"
+                >
+                    <gmp-advanced-marker
+                        position="37.4220656,-122.0840897"
+                        title="Mountain View, CA"
+                    ></gmp-advanced-marker>
+                    <gmp-advanced-marker
+                        position="47.648994,-122.3503845"
+                        title="Seattle, WA"
+                    ></gmp-advanced-marker>
+                </gmp-map>
+            </div>
+
             <footer>
                 <div>
                     <h3>910 SE Pioneer Way</h3>
@@ -319,6 +337,7 @@
             </footer>
         </main>
 
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAT6FWLi6xzbBgU5mFGHn-FDsAStQyCI&callback=initMap&v=weekly&solution_channel=GMP_CCS_geocodingservice_v2" defer></script>
         <script src="./scripts/slideshow.js"></script>
         <script src="./scripts/scroll.js"></script>
         <script src="./scripts/dropdown.js"></script>
