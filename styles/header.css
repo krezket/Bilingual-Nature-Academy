@@ -87,7 +87,7 @@
 }
 @media (max-width: 1650px) {
     .filler-header {
-        min-height: 210px;
+        min-height: 10px;
     }
     .header, .form-header {
         width: 100%;
