@@ -40,6 +40,10 @@ main {
     /* height: 100vh; */
     justify-content: space-between;
 }
+#map {
+    display: flex;
+    justify-content: center;
+}
 
 footer {
     display: flex;
