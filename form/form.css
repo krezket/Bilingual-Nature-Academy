@@ -21,7 +21,6 @@ label {
     font-weight: bolder;
 }
 input {
-    width: 100%;
     max-width: 400px;
     padding: 12px 16px;
     border: 1px solid #ccc;
