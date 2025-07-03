@@ -54,7 +54,24 @@ input:focus {
     /* mid grey */
     background-color: #d5d5d7; 
 }
-@media (min-width: 754px ){
+.waiver-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1%;
+    /* mid grey */
+    background-color: #d5d5d7; 
+}
+.waiver-form {
+    display: flex;
+    flex-direction: column;
+}
+.waiver-label {
+    margin-top: 20px;
+}
+@media (min-width: 754px) {
     .form-con {
         display: flex;
         justify-content: center;
