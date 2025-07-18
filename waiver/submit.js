@@ -6,14 +6,11 @@ async function submitForm() {
     // set formValues as an empty object
     const formValues = {};
 
-    // get all required inputs by class
-    const requiredInputClass = document.querySelectorAll('.inputRequired');
-
     // get all inputs
     const inputs = document.querySelectorAll('input');
 
-    // get all textareas 
-    const textareas = document.querySelectorAll('textarea');
+    // get all required inputs by class
+    const requiredInputClass = document.querySelectorAll('.inputRequired');
 
     // set initial state of required emptyFields as false
     let emptyFields = false;
@@ -34,7 +31,7 @@ async function submitForm() {
             emptyFields = true;
 
             // scroll to the top of the page
-            section1.scrollIntoView({ behavior: 'smooth' });
+            // section1.scrollIntoView({ behavior: 'smooth' });
         }
         else { 
 
@@ -65,20 +62,21 @@ async function submitForm() {
         };
     });
 
-    // do the following for each textarea 
-    textareas.forEach(textarea => {
-
-        // add value of all textarea to formValues object
-        formValues[textarea.name] = textarea.value;
-    });
+    // // do the following for each textarea 
+    // textareas.forEach(textarea => {
+    //
+    //     // add value of all textarea to formValues object
+    //     formValues[textarea.name] = textarea.value;
+    // });
 
     // for debuggind
-    // console.log(formValues);
+    console.log(formValues);
 
    /*  */ /*  */ /*  */ /*  */ 
 
     try {
-        const response = await fetch('https://bna-backend-d057bbf0cede.herokuapp.com/submit-form', {
+        // const response = await fetch('https://bna-backend-d057bbf0cede.herokuapp.com/submit-form', {
+        const response = await fetch('127.0.0.1:5555/submit-waiver', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formValues)
