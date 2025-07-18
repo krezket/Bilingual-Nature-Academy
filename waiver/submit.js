@@ -82,7 +82,8 @@ async function submitForm() {
             body: JSON.stringify(formValues)
             });
         if (response.ok) {
-            window.location.href = '../success/';
+            // window.location.href = '../success/';
+            console.log("yay")
         }
         else {
             alert('An error occurred while sending the email.');
