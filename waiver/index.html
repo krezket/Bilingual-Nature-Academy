@@ -70,9 +70,9 @@
                     <div class="section">
                         <p><strong>5. Photography and Media Release</strong></p>
                         <div class="checkbox-group">
-                            <input type="radio" id="photoYes" name="photoPermission" value="yes">
+                            <input class="inputRequired" type="radio" id="photoYes" name="photoPermission" value="yes">
                             <label class="waiver-label" for="photoYes">☐ Yes – I give permission</label><br>
-                            <input type="radio" id="photoNo" name="photoPermission" value="no">
+                            <input class="inputRequired" type="radio" id="photoNo" name="photoPermission" value="no">
                             <label class="waiver-label" for="photoNo">☐ No – I do not give permission</label>
                         </div>
                     </div>
@@ -88,33 +88,33 @@
 
                         <form class="waiver-form">
                             <label class="waiver-label" for="parentName">Parent/Guardian Full Name:</label>
-                            <input type="text" id="parentName" name="parentName">
+                            <input class="inputRequired" type="text" id="parentName" name="parentName">
 
                             <label class="waiver-label" for="childrenNames">Child(ren)’s Full Name(s):</label>
-                            <input type="text" id="childrenNames" name="childrenNames">
+                            <input class="inputRequired" type="text" id="childrenNames" name="childrenNames">
 
                             <label class="waiver-label">Are you the legal guardian?</label>
                             <div class="checkbox-group">
-                                <input type="radio" id="guardianYes" name="legalGuardian" value="yes">
+                                <input class="inputRequired" type="radio" id="guardianYes" name="legalGuardian" value="yes">
                                 <label class="waiver-label" for="guardianYes">☐ Yes</label><br>
-                                <input type="radio" id="guardianNo" name="legalGuardian" value="no">
+                                <input class="inputRequired" type="radio" id="guardianNo" name="legalGuardian" value="no">
                                 <label class="waiver-label" for="guardianNo">☐ No</label>
                             </div>
 
                             <label class="waiver-label" for="phoneNumber">Phone Number:</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                            <input class="inputRequired" type="tel" id="phoneNumber" name="phoneNumber">
 
                             <label class="waiver-label" for="emailAddress">Email Address:</label>
-                            <input type="email" id="emailAddress" name="emailAddress">
+                            <input class="inputRequired" type="email" id="emailAddress" name="emailAddress">
 
                             <label class="waiver-label" for="emergencyContact">Emergency Contact Name & Phone:</label>
-                            <input type="text" id="emergencyContact" name="emergencyContact">
+                            <input class="inputRequired" type="text" id="emergencyContact" name="emergencyContact">
 
                             <label class="waiver-label" for="signature">Signature:</label>
-                            <input type="text" id="signature" name="signature">
+                            <input class="inputRequired" type="text" id="signature" name="signature">
 
                             <label class="waiver-label" for="date">Date:</label>
-                            <input type="date" id="date" name="date">
+                            <input class="inputRequired" type="date" id="date" name="date">
                         </form>
                         <button class="form-submit" type='submit' onclick="submitForm()">
                             <h3>Submit</h3>
