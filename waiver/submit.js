@@ -75,8 +75,8 @@ async function submitForm() {
    /*  */ /*  */ /*  */ /*  */ 
 
     try {
-        // const response = await fetch('https://bna-backend-d057bbf0cede.herokuapp.com/submit-form', {
-        const response = await fetch('127.0.0.1:5555/submit-waiver', {
+        const response = await fetch('https://bna-backend-d057bbf0cede.herokuapp.com/submit-waiver', {
+        // const response = await fetch('127.0.0.1:5555/submit-waiver', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formValues)
