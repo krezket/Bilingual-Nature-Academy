@@ -1,6 +1,6 @@
 /* =========================
- *   Base Styles (Mobile-First)
- *   ========================= */
+ *  Base Styles (Mobile-First)
+ *  ========================= */
 body {
     font-family: "Slabo 27px", serif;
     font-size: 18px; /* larger base font for readability */
@@ -10,26 +10,44 @@ body {
     margin: 0;
 }
 
-h1, h2 {
+/* =========================
+ *  Header Styles
+ *  ========================= */
+header.form-header {
+    background-color: #8ea092;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    margin-bottom: 12px;
-    font-size: 2rem;
+    color: white;
 }
 
+header.form-header h1 {
+    margin: 0;
+    font-size: 2rem; /* desktop font size */
+}
+
+header.form-header h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.6rem; /* desktop font size */
+}
+
+/* =========================
+ *  Headings
+ *  ========================= */
 h3 {
     margin-top: 25px;
     font-size: 1.6rem;
 }
 
 /* =========================
- *   Form Container
- *   ========================= */
+ *  Form Container
+ *  ========================= */
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     padding: 20px;
     background-color: #d5d5d7;
     border-radius: 10px;
@@ -37,8 +55,8 @@ form {
 }
 
 /* =========================
- *   Labels
- *   ========================= */
+ *  Labels
+ *  ========================= */
 label {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -46,8 +64,8 @@ label {
 }
 
 /* =========================
- *   Text & Date Inputs
- *   ========================= */
+ *  Text & Date Inputs
+ *  ========================= */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -80,8 +98,8 @@ input[type="date"]:focus {
 }
 
 /* =========================
- *   Radios and Checkboxes
- *   ========================= */
+ *  Radios and Checkboxes
+ *  ========================= */
 .checkbox-group,
 .days-group {
     display: flex;
@@ -97,8 +115,8 @@ input[type="checkbox"] {
 }
 
 /* =========================
- *   Textarea
- *   ========================= */
+ *  Textarea
+ *  ========================= */
 textarea {
     width: 100%;
     max-width: 500px;
@@ -119,8 +137,8 @@ textarea:focus {
 }
 
 /* =========================
- *   Button
- *   ========================= */
+ *  Button
+ *  ========================= */
 button[type="submit"] {
     margin-top: 20px;
     padding: 14px 20px;
@@ -139,8 +157,8 @@ button[type="submit"]:hover {
 }
 
 /* =========================
- *   Footer
- *   ========================= */
+ *  Footer
+ *  ========================= */
 .footer-note {
     text-align: center;
     margin-top: 20px;
@@ -148,11 +166,31 @@ button[type="submit"]:hover {
 }
 
 /* =========================
- *   Media Queries (Larger Screens)
- *   ========================= */
+ *  Media Queries (Larger Screens)
+ *  ========================= */
 @media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+
     form {
         padding: 25px;
+    }
+
+    header.form-header h1 {
+        font-size: 2rem;
+    }
+
+    header.form-header h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 1.2rem;
     }
 
     input[type="text"],
@@ -167,5 +205,36 @@ button[type="submit"]:hover {
     button[type="submit"] {
         font-size: 1.2rem;
         padding: 12px 20px;
+    }
+}
+
+/* =========================
+ *  Responsive Adjustments for Mobile
+ *  ========================= */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+        font-size: 1.3rem;
+        padding: 14px 16px;
+    }
+
+    button[type="submit"] {
+        font-size: 1.4rem;
+        padding: 16px;
     }
 }
