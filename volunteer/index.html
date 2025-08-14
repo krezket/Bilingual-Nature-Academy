@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Volunteer Application Form - Bilingual Nature Academy</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Volunteer Application Form - Bilingual Nature Academy</title>
+        <link rel="stylesheet" href="volunteer.css">
+    </head>
+    <body>
 
-  <h1>Bilingual Nature Academy LLC</h1>
-  <h2>Volunteer Application Form</h2>
+        <header class="form-header">
+            <h1>Bilingual Nature Academy LLC</h1>
+            <h2>Volunteer Application Form</h2>
+        </header>
 
-  <form>
-    <p>Thank you for your inquiry in volunteering with BNA! We appreciate your willingness to support our nature-based, bilingual early learning program.</p>
-    <p>Please complete the inquiry below, and we will be in contact with you for an official meeting and full form to fill out.</p>
+        <form>
+            <p>Thank you for your inquiry in volunteering with BNA! We appreciate your willingness to support our nature-based, bilingual early learning program.</p>
+            <p>Please complete the inquiry below, and we will be in contact with you for an official meeting and full form to fill out.</p>
 
-    <h3>🔹 Personal Information</h3>
+            <h3>🔹 Personal Information</h3>
 
-    <label for="full-name">Full Name:</label>
-    <input type="text" id="full-name" name="full_name" required>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
 
-    <label for="preferred-name">Preferred Name (Ms.G/Mr.Tony):</label>
-    <input type="text" id="preferred-name" name="preferred_name">
+            <label for="preferred-name">Preferred Name (Ms.G/Mr.Tony):</label>
+            <input type="text" id="preferred-name" name="preferred_name">
 
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="date_of_birth" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="date_of_birth" required>
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone_number" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone_number" required>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email_address" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email_address" required>
 
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
 
-    <h3>🔹 Volunteer Purpose</h3>
+            <h3>🔹 Volunteer Purpose</h3>
 
-    <div class="checkbox-group">
-      <label><input type="radio" name="purpose" value="college"> College Required Hours</label>
-      <label><input type="radio" name="purpose" value="highschool"> High School Graduation Hours</label>
-      <label><input type="radio" name="purpose" value="personal"> Personal Interest</label>
-      <label><input type="radio" name="purpose" value="other"> Other:</label>
-      <input type="text" name="other_purpose">
-    </div>
+            <div class="checkbox-group">
+                <label><input type="radio" name="purpose" value="college"> College Required Hours</label>
+                <label><input type="radio" name="purpose" value="highschool"> High School Graduation Hours</label>
+                <label><input type="radio" name="purpose" value="personal"> Personal Interest</label>
+                <label><input type="radio" name="purpose" value="other"> Other:</label>
+                <input type="text" name="other_purpose">
+            </div>
 
-    <label for="hours-required">How many hours are required (if applicable)?</label>
-    <input type="text" id="hours-required" name="hours_required">
+            <label for="hours-required">How many hours are required (if applicable)?</label>
+            <input type="text" id="hours-required" name="hours_required">
 
-    <label for="deadline">Deadline to complete hours:</label>
-    <input type="date" id="deadline" name="deadline">
+            <label for="deadline">Deadline to complete hours:</label>
+            <input type="date" id="deadline" name="deadline">
 
-    <h3>🔹 Availability</h3>
+            <h3>🔹 Availability</h3>
 
-    <div class="days-group">
-      <label><input type="checkbox" name="availability" value="monday"> Monday</label>
-      <label><input type="checkbox" name="availability" value="tuesday"> Tuesday</label>
-      <label><input type="checkbox" name="availability" value="wednesday"> Wednesday</label>
-      <label><input type="checkbox" name="availability" value="thursday"> Thursday</label>
-      <label><input type="checkbox" name="availability" value="friday"> Friday</label>
-      <label><input type="checkbox" name="availability" value="saturday"> Saturday</label>
-      <label><input type="checkbox" name="availability" value="sunday"> Sunday</label>
-    </div>
+            <div class="days-group">
+                <label><input type="checkbox" name="availability" value="monday"> Monday</label>
+                <label><input type="checkbox" name="availability" value="tuesday"> Tuesday</label>
+                <label><input type="checkbox" name="availability" value="wednesday"> Wednesday</label>
+                <label><input type="checkbox" name="availability" value="thursday"> Thursday</label>
+                <label><input type="checkbox" name="availability" value="friday"> Friday</label>
+                <label><input type="checkbox" name="availability" value="saturday"> Saturday</label>
+                <label><input type="checkbox" name="availability" value="sunday"> Sunday</label>
+            </div>
 
-    <label>Can you commit to a regular schedule?</label>
-    <label><input type="radio" name="regular_schedule" value="yes"> Yes</label>
-    <label><input type="radio" name="regular_schedule" value="no"> No</label>
+            <label>Can you commit to a regular schedule?</label>
+            <label><input type="radio" name="regular_schedule" value="yes"> Yes</label>
+            <label><input type="radio" name="regular_schedule" value="no"> No</label>
 
-    <label for="additional-info">Other, additional information you'd like to share:</label>
-    <textarea id="additional-info" name="additional_info" rows="4"></textarea>
+            <label for="additional-info">Other, additional information you'd like to share:</label>
+            <textarea id="additional-info" name="additional_info" rows="4"></textarea>
 
-    <button type="submit">Submit Application</button>
-  </form>
+            <button type="submit">Submit Application</button>
+        </form>
 
-  <p class="footer-note">Thank you! We will be in contact shortly.<br><strong>BNA TEAM</strong></p>
+        <p class="footer-note">Thank you! We will be in contact shortly.<br><strong>BNA TEAM</strong></p>
+                <script src="./submit.js"></script>
 
-</body>
+    </body>
 </html>
 
