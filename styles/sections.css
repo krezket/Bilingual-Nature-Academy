@@ -97,7 +97,7 @@ body {
     position: relative;
     object-fit: contain;
     object-position: top;
-    width: 35%;
+    width: 150%;
     margin: 2%;
     z-index: 2;
 }
