@@ -1,25 +1,33 @@
-/* Page Typography */
+/* =========================
+ *   Base Styles (Mobile-First)
+ *   ========================= */
 body {
     font-family: "Slabo 27px", serif;
+    font-size: 18px; /* larger base font for readability */
     background-color: #f8f8f8;
     color: #333;
-    padding: 20px;
+    padding: 15px;
+    margin: 0;
 }
 
 h1, h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 2rem;
 }
 
 h3 {
-    margin-top: 30px;
-    font-size: 1.4rem;
+    margin-top: 25px;
+    font-size: 1.6rem;
 }
 
-/* Form container */
+/* =========================
+ *   Form Container
+ *   ========================= */
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
@@ -28,28 +36,32 @@ form {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Labels */
+/* =========================
+ *   Labels
+ *   ========================= */
 label {
     margin-top: 15px;
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
-/* Text & Date Inputs */
+/* =========================
+ *   Text & Date Inputs
+ *   ========================= */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"] {
     width: 100%;
     max-width: 500px;
-    padding: 12px 16px;
+    padding: 14px 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1.2rem;
     background-color: #fff;
     outline: none;
     transition: border 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 input[type="text"]:hover,
@@ -67,13 +79,15 @@ input[type="date"]:focus {
     box-shadow: 0 4px 12px rgba(0,123,255,0.2);
 }
 
-/* Radios and checkboxes */
+/* =========================
+ *   Radios and Checkboxes
+ *   ========================= */
 .checkbox-group,
 .days-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 input[type="radio"],
@@ -82,34 +96,38 @@ input[type="checkbox"] {
     margin-right: 8px;
 }
 
-/* Textarea */
+/* =========================
+ *   Textarea
+ *   ========================= */
 textarea {
     width: 100%;
     max-width: 500px;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-family: "Slabo 27px", serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     resize: vertical;
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 textarea:focus {
-    border-color: #007BFF;
+    border-color: #007bff;
     box-shadow: 0 0 5px rgba(0,123,255,0.5);
     outline: none;
 }
 
-/* Button */
+/* =========================
+ *   Button
+ *   ========================= */
 button[type="submit"] {
     margin-top: 20px;
-    padding: 12px 20px;
+    padding: 14px 20px;
     border-radius: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -120,34 +138,21 @@ button[type="submit"]:hover {
     border-color: #007bff;
 }
 
-/* Footer note */
+/* =========================
+ *   Footer
+ *   ========================= */
 .footer-note {
     text-align: center;
     margin-top: 20px;
     font-style: italic;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
+/* =========================
+ *   Media Queries (Larger Screens)
+ *   ========================= */
+@media (min-width: 769px) {
     form {
-        width: 100%;
-        padding: 15px;
-    }
-
-    h1, h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    label {
-        font-size: 1rem;
+        padding: 25px;
     }
 
     input[type="text"],
@@ -155,19 +160,12 @@ button[type="submit"]:hover {
     input[type="tel"],
     input[type="date"],
     textarea {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .checkbox-group,
-    .days-group {
-        flex-direction: column;
-        gap: 8px;
+        font-size: 1.2rem;
+        padding: 12px 16px;
     }
 
     button[type="submit"] {
-        width: 100%;
-        font-size: 1rem;
-        padding: 10px;
+        font-size: 1.2rem;
+        padding: 12px 20px;
     }
 }
