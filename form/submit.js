@@ -1,5 +1,5 @@
 async function submitForm() {
-    
+
     // get all elements by id of section1
     const section1 = document.getElementById('section1');
 
@@ -17,13 +17,13 @@ async function submitForm() {
 
     // set initial state of required emptyFields as false
     let emptyFields = false;
-    
+
     // do the following for each required input 
     requiredInputClass.forEach(input => {
 
         // get all required labels with their respective ids
         const label = document.querySelector(`label[for="${input.id}"]`);
-        
+
         // if input value equals nothing (.trim removes any empty space)
         if (input.value.trim() === '') {
 

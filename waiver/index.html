@@ -95,6 +95,23 @@
                             <label class="waiver-label" for="childrenNames">Child’s Full Name</label>
                             <input class="inputRequired" type="text" id="childrenNames" name="childrenNames">
 
+                            <label class="waiver-label" for="childrenCA">Child’s Current Age</label>
+                            <input class="inputRequired" type="text" id="childrenCA" name="childrenCA">
+
+                            <label class="waiver-label" for="childrenDOB">Child's Date of Birth</label>
+                            <input class="inputRequired" id='childrenDOB' type="date" name="childrenDOB" /><br>
+
+                            <label class="waiver-label" for="illnesses">Illnesses or Allergies</label>
+                            <input class="inputRequired" type="text" id="illnesses" name="illnesses">
+
+                            <label class="waiver-label">Potty Trained</label>
+                            <div class="checkbox-group">
+                                <input class="inputRequired" type="radio" id="pottyYes" name="pottyTrained" value="yes">
+                                <label class="waiver-label" for="pottyYes">Yes</label><br>
+                                <input class="inputRequired" type="radio" id="pottyNo" name="PottyTrained" value="no">
+                                <label class="waiver-label" for="pottyNo">No</label>
+                            </div>
+
                             <label class="waiver-label">Are you the legal guardian?</label>
                             <div class="checkbox-group">
                                 <input class="inputRequired" type="radio" id="guardianYes" name="legalGuardian" value="yes">
@@ -102,6 +119,12 @@
                                 <input class="inputRequired" type="radio" id="guardianNo" name="legalGuardian" value="no">
                                 <label class="waiver-label" for="guardianNo">No</label>
                             </div>
+
+                            <label class="waiver-label" for="other">Other info you would like to provide:</label>
+                            <textarea id="other" name="other"></textarea>
+
+                            <label class="waiver-label" for="dropOffDate">Drop off date:</label>
+                            <input class="inputRequired" type="date" id="dropOffDate" name="dropOffDate">
 
                             <label class="waiver-label" for="dropOff">Drop off time:</label>
                             <input class="inputRequired" type="time" id="dropOff" name="dropOff">
@@ -118,7 +141,7 @@
                             <label class="waiver-label" for="signature">Signature:</label>
                             <input class="inputRequired" type="text" id="signature" name="signature">
 
-                            <label class="waiver-label" for="date">Date:</label>
+                            <label class="waiver-label" for="date">Date Signed:</label>
                             <input class="inputRequired" type="date" id="date" name="date">
                         </form>
                         <button class="form-submit" type='submit' onclick="submitForm()">
